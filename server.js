@@ -47,7 +47,7 @@ app.post("/api/payments", async (req, res) => {
       return res.status(500).json({
         success: false,
         message:
-          "La clé API OPENPAY n'est pas configurée dans le fichier .env.",
+          "La clé API OPENPAY manquand",
       });
     }
 

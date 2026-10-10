@@ -338,14 +338,7 @@ function SuccessPanel({
         </dl>
       )}
 
-      {result.payment && (
-        <details className="rounded-xl border border-slate-800 bg-slate-950/40 px-4 py-3 text-sm">
-          <summary className="cursor-pointer text-slate-400 select-none">Réponse brute OPENPAY</summary>
-          <pre className="mt-2 max-h-48 overflow-auto text-xs text-slate-400">
-            {JSON.stringify(result.payment, null, 2)}
-          </pre>
-        </details>
-      )}
+      
 
       <button
         type="button"
