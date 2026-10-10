@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "workspaces": [
+    "client"
+  ],
   "scripts": {
     "dev": "concurrently -n api,web -c yellow,cyan \"node server.js\" \"npm --prefix client run dev\"",
     "dev:server": "node server.js",
